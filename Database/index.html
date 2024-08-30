@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck and Trailer Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Truck and Trailer Information</h1>
+        
+        <form id="infoForm">
+            <fieldset>
+                <legend>Truck Information</legend>
+                <label for="truckID">Truck ID:</label>
+                <input type="text" id="truckID" name="truckID" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Trailer/Carriage Information</legend>
+                <label for="trailerID">Trailer/Carriage ID:</label>
+                <input type="text" id="trailerID" name="trailerID" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </fieldset>
+            
+            <button type="submit">Submit Information</button>
+        </form>
+        
+        <div id="infoDisplay">
+            <h2>Submitted Information</h2>
+            <pre id="infoOutput"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Base colors */
+:root {
+    --gray-850: #161D26; /* Dark gray */
+    --white: #FFFFFF;    /* White */
+    --aws-blue: #0073E6; /* Example AWS blue color */
+    --button-hover: #005bb5; /* Darker shade of AWS blue for hover */
+    --button-focus: #0056b3; /* Focus color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-850); /* Dark gray background for the body */
+    color: var(--white); /* White text color for contrast */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--gray-850); /* Dark gray background for container */
+}
+
+h1 {
+    text-align: center;
+    color: var(--white); /* White text color for headings */
+}
+
+form {
+    background: var(--white); /* White background for form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--gray-850); /* Dark gray color for legend text */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gray-850); /* Dark gray color for labels */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--aws-blue); 
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover); /* Darker blue for button hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.5); /* Add custom focus ring */
+}
+
+#infoDisplay {
+    margin-top: 20px;
+    background: var(--gray-850); /* Dark gray background for info display */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+pre {
+    background: #f4f4f4; /* Light gray background for preformatted text */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: var(--gray-850); /* Dark gray color for preformatted text */
+}
